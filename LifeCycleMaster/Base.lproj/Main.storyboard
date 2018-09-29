@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QeX-vj-jeL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item 2-->
+        <scene sceneID="nZs-iR-FQM">
+            <objects>
+                <viewController id="2Hx-aX-sV9" customClass="S2RootViewController" customModule="LifeCycleMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rRB-oY-gmH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-Kg-KqN">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="下一页"/>
+                                <connections>
+                                    <segue destination="bzH-vr-mMZ" kind="showDetail" id="dTh-Vr-fAL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="e3U-WQ-wIu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="8vY-1N-uKU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8zd-1o-NBd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="351"/>
+        </scene>
+        <!--Detail1 View Controller-->
+        <scene sceneID="DXz-Z3-BbO">
+            <objects>
+                <viewController id="bzH-vr-mMZ" customClass="Detail1ViewController" customModule="LifeCycleMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Icf-ER-6co">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCs-9g-oPH">
+                                <rect key="frame" x="49" y="54" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="backAction:" destination="bzH-vr-mMZ" eventType="touchUpInside" id="Kg3-6f-6ht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4he-oX-IBO">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="下一页"/>
+                                <connections>
+                                    <segue destination="gtp-dW-tWa" kind="showDetail" id="tD4-Zt-Tuu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="nIM-QJ-alo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFD-7f-pWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="256.80000000000001" y="349.47526236881561"/>
+        </scene>
+        <!--Detail2 View Controller-->
+        <scene sceneID="K3i-Z6-sGk">
+            <objects>
+                <viewController id="gtp-dW-tWa" customClass="Detail2ViewController" customModule="LifeCycleMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IAQ-Xa-4ng">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMM-gs-5Cu">
+                                <rect key="frame" x="52" y="47" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <action selector="backAction:" destination="gtp-dW-tWa" eventType="touchUpInside" id="UDw-hL-Ddi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Tcf-bT-vbn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qeD-pO-6RP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="349"/>
+        </scene>
+        <!--push-->
+        <scene sceneID="OAE-tX-VGH">
+            <objects>
+                <tableViewController id="XUL-wp-rDZ" customClass="ListTableViewController" customModule="LifeCycleMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hcx-YQ-mnc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="EiV-Sc-aNh">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EiV-Sc-aNh" id="BAb-iy-P9d">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="aC1-xg-JNK" kind="show" id="jb1-Qh-cGG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XUL-wp-rDZ" id="gIy-wr-tLn"/>
+                            <outlet property="delegate" destination="XUL-wp-rDZ" id="g3G-Le-nmw"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="push" id="1p2-Vn-8EB">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="Ukm-X8-xVB"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8U-fS-eJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="390" y="1162"/>
+        </scene>
+        <!--Son View Controller-->
+        <scene sceneID="3Eu-3Y-U9l">
+            <objects>
+                <viewController id="aC1-xg-JNK" customClass="SonViewController" customModule="LifeCycleMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eTJ-nd-JoQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="9sB-0I-eGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ni-hv-mfj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="1162"/>
+        </scene>
+        <!--列表视图-->
+        <scene sceneID="hvS-MY-QTw">
+            <objects>
+                <navigationController id="dSk-4d-xVW" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="列表视图" id="Rcq-zf-Tjt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OpR-RK-2ai">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XUL-wp-rDZ" kind="relationship" relationship="rootViewController" id="oDY-cF-hAa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8i-wI-yzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594" y="1162"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="1oQ-d7-Opd">
+            <objects>
+                <viewController id="jnm-73-8dM" customClass="ViewController" customModule="LifeCycleMaster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yh1-5G-7CY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3V-2T-H4f">
+                                <rect key="frame" x="141.5" y="55" width="92" height="30"/>
+                                <state key="normal" title="添加一个视图"/>
+                                <connections>
+                                    <action selector="viewAction:" destination="jnm-73-8dM" eventType="touchUpInside" id="HnH-5o-Y4L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ndm-8f-NdL" firstAttribute="top" secondItem="K3V-2T-H4f" secondAttribute="bottom" constant="-65" id="Hy2-ft-nbi"/>
+                            <constraint firstItem="K3V-2T-H4f" firstAttribute="centerX" secondItem="Ndm-8f-NdL" secondAttribute="centerX" id="aLx-j5-Cq5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ndm-8f-NdL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="qMa-2y-tNL"/>
+                    <connections>
+                        <outlet property="addOrRemoveViewButton" destination="K3V-2T-H4f" id="a4y-Za-D35"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6W-st-FE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="-313"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="E16-jW-O6P">
+            <objects>
+                <tabBarController id="QeX-vj-jeL" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kVv-SO-nX1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jnm-73-8dM" kind="relationship" relationship="viewControllers" id="vYZ-b0-2r4"/>
+                        <segue destination="2Hx-aX-sV9" kind="relationship" relationship="viewControllers" id="838-vD-w6f"/>
+                        <segue destination="dSk-4d-xVW" kind="relationship" relationship="viewControllers" id="cD0-9Y-SyI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXy-QO-uzU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1524" y="19"/>
+        </scene>
+    </scenes>
+</document>
