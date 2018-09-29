@@ -123,6 +123,19 @@
                     <navigationItem key="navigationItem" title="push" id="1p2-Vn-8EB">
                         <barButtonItem key="backBarButtonItem" title="返回" id="Ukm-X8-xVB"/>
                     </navigationItem>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="JTL-lg-kwD">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <attributedString key="attributedTitle">
+                            <fragment content="拉祜说">
+                                <attributes>
+                                    <color key="NSBackgroundColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="NSColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x8U-fS-eJT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +144,7 @@
         <!--Son View Controller-->
         <scene sceneID="3Eu-3Y-U9l">
             <objects>
-                <viewController id="aC1-xg-JNK" customClass="SonViewController" customModule="LifeCycleMaster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="aC1-xg-JNK" customClass="SonViewController" customModule="LifeCycleMaster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTJ-nd-JoQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
